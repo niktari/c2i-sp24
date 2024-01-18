@@ -1,0 +1,72 @@
+.glyphs {
+    display: flex;
+    /* gap: calc(100% / 12); */
+    /* justify-content: space-between; */
+    height: 30vw;
+    /* background-color: green; */
+}
+
+.glyphs--main {
+    display: flex;
+    width: 100%;
+}
+
+.glyph {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#glyph--c, #glyph--2 {
+    width: 38%;
+    /* background-color: red; */
+}
+
+#glyph--c div, #glyph--2 div {
+    width: calc(100% / 12);
+    height: calc(100% / 12);
+}
+
+#glyph--i {
+    width: 19%;
+    /* background-color: orange; */
+}
+
+#glyph--i div {
+    width: calc(100% / 6);
+    height: calc(100% / 12);
+}
+
+.glyphs--lab {
+    display: flex;
+    width: 10%;
+    /* background-color: pink; */
+}
+
+.glyph--lab {
+    display: flex;
+    align-self: flex-end;
+    width: calc((100% / 3));
+    height: calc(100% / 12);
+    /* background-color: purple; */
+}
+
+
+.glyph--lab div {
+    width: calc(100% / 6);
+    height: calc(100% / 6);
+}
+
+.glyph--lab-spacer {
+    width: calc(100% / 20);
+    height: calc(100% / 12);
+    /* background-color: purple; */
+}
+
+.blank {
+    /* background-color: yellow; */
+    border-radius: 50%;
+}
+
+.fill {
+    background-color: var(--black);
+}
