@@ -43,6 +43,8 @@
 
     --border: 1.5px solid var(--black);
 
+    --highlight-color: null;
+
 }
 
 html {
@@ -54,6 +56,11 @@ body {
     font-family: var(--sans-serif);
     background-color: var(--beige);
 }
+
+::selection {
+    background: var(--highlight-color);
+    color: var(--white);
+  }
 
 h1, .h1 {
     font-size: var(--font-size-h1);

@@ -29,6 +29,15 @@ summary_links.forEach((summary_link) => {
         }
 })
 
+
+// HIGHLIGHT
+window.addEventListener("mousedown", () => {
+    const color = palette.shift();
+    document.documentElement.style.setProperty("--highlight-color", color);
+    palette.push(color);
+    console.log('hi')
+  });
+
 // GLYPHS
 let c_cells = document.querySelectorAll('#glyph--c .fill');
 let two_cells = document.querySelectorAll('#glyph--2 .fill');
