@@ -350,21 +350,27 @@ footer {
         flex-direction: column;
     }
 
-    .hero {
-        padding-top: calc(var(--section-padding) * 2);
+    header {
+        gap: 1rem;
     }
 
-
-}
-
-@media screen and (max-width: 38rem) {
-
-    :root {
-        font-size: 10px;
+    .hero {
+        padding-top: calc(var(--section-padding) * 2);
     }
 
     h1, .h1, h2, .h2, h3, .h3, p, a {
         letter-spacing: -0.01em;
     }
 
-} 
+
+}
+/* 
+@media screen and (max-width: 38rem) {
+
+    :root {
+        font-size: 10px;
+    }
+
+
+
+}  */
