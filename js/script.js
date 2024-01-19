@@ -1,7 +1,3 @@
-window.onload = function(){
-
-console.log('document is ready')
-
 let palette = ["#FF4901", "#0277C7", "#EDC83E", "#3BB475", "#4E51AA"];
 
 let c_cells = document.querySelectorAll('#glyph--c .fill');
@@ -95,9 +91,5 @@ lab.onmouseout = () => {
     })
 }
 
-
-
-
-}
 
 
