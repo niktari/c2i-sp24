@@ -51,7 +51,7 @@ c_cells.forEach((c_cell) => {
     
     c_cell.onmouseover = () => {
 
-        c_cell.innerHTML = "<p class='special'>I ❤ Code</p>"
+        c_cell.innerHTML = "<p class='special'>I ♥ Code</p>"
         c_cell.style.color = palette[Math.floor(Math.random() * palette.length)];
         c_cell.style.backgroundColor = "transparent";
         // c_cell.style.transform = `rotate(${e.clientX * 2}deg)`
@@ -78,7 +78,7 @@ c_cells.forEach((c_cell) => {
 
 two_cells.forEach((two_cell) => {
     two_cell.onmouseover = () => {
-        two_cell.innerHTML = "<p class='special'>I ❤ Code</p>"
+        two_cell.innerHTML = "<p class='special'>I ♥ Code</p>"
         two_cell.style.color = palette[Math.floor(Math.random() * palette.length)];
         two_cell.style.backgroundColor = "transparent";
 
@@ -93,7 +93,7 @@ two_cells.forEach((two_cell) => {
 i_cells.forEach((i_cell) => {
 
     i_cell.onmouseover = () => {
-    i_cell.innerHTML = "<p class='special'>I ❤ Code</p>";
+    i_cell.innerHTML = "<p class='special'>I ♥ Code</p>";
     i_cell.style.color = palette[Math.floor(Math.random() * palette.length)];
     i_cell.style.backgroundColor = "transparent";
     // i_cell.style.top = `${Math.random() * 10 - 5}px`;
