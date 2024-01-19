@@ -57,13 +57,14 @@ body {
 
 h1, .h1 {
     font-size: var(--font-size-h1);
-    line-height: 1;
+    line-height: 1.3;
     font-weight: var(--font-weight-bold);
     letter-spacing: -0.02em;
 }
 
 h2, .h2 {
     font-size: var(--font-size-h2);
+    line-height: 1.3;
     font-weight: var(--font-weight-bold);
     letter-spacing: -0.02em;
 }
@@ -101,11 +102,6 @@ a:not(nav a)::after {
 	content: "↗";
 	font-family: var(--symbols);
 	margin-left: 4px;
-	color: var(--black);
-}
-
-a:not(nav a):hover::after {
-	color: transparent;
 }
 
 section {

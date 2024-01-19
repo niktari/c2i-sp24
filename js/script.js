@@ -1,5 +1,35 @@
 let palette = ["#FF4901", "#0277C7", "#EDC83E", "#3BB475", "#4E51AA"];
 
+// LINKS
+
+let links = document.querySelectorAll("a:not(nav ul li a)");
+let summary_links = document.querySelectorAll("summary");
+
+console.log(summary_links)
+
+links.forEach((link) => {
+
+    link.onmouseover = () => {
+    link.style.color = palette[Math.floor(Math.random() * palette.length)];
+    }
+
+    link.onmouseout = () => {
+        link.style.color = "var(--black)";
+        }
+})
+
+
+summary_links.forEach((summary_link) => {
+    summary_link.onmouseover = () => {
+        summary_link.style.color = palette[Math.floor(Math.random() * palette.length)];
+    }
+
+    summary_link.onmouseout = () => {
+        summary_link.style.color = "var(--black)";
+        }
+})
+
+// GLYPHS
 let c_cells = document.querySelectorAll('#glyph--c .fill');
 let two_cells = document.querySelectorAll('#glyph--2 .fill');
 let i_cells = document.querySelectorAll('#glyph--i .fill');
@@ -9,9 +39,6 @@ let i_cells = document.querySelectorAll('#glyph--i .fill');
 
 
 c_cells.forEach((c_cell) => {
-
-
-
     
     c_cell.onmouseover = () => {
 
