@@ -424,13 +424,13 @@ footer {
 
 @media screen and (max-width: 78rem) {
 	:root {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 
 @media screen and (max-width: 68rem) {
 	:root {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -469,13 +469,3 @@ footer {
 
 
 }
-/* 
-@media screen and (max-width: 38rem) {
-
-    :root {
-        font-size: 10px;
-    }
-
-
-
-}  */
