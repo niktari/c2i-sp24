@@ -10,9 +10,10 @@ console.log(summary_links)
 
 links.forEach((link) => {
 
-    let random_color = palette[Math.floor(Math.random() * palette.length)]
+    
 
     link.onmouseover = () => {
+    let random_color = palette[Math.floor(Math.random() * palette.length)]
     link.style.color = random_color;
     
     }
@@ -25,9 +26,10 @@ links.forEach((link) => {
 
 underlines.forEach((underline => {
 
-    let random_color = palette[Math.floor(Math.random() * palette.length)]
+    
 
         underline.onmouseover = () => {
+            let random_color = palette[Math.floor(Math.random() * palette.length)]
             underline.style.color = random_color;
             underline.style.borderBottom = `1.5px solid ${random_color}`;
         }
