@@ -2,21 +2,42 @@ let palette = ["#FF4901", "#0277C7", "#EDC83E", "#3BB475", "#4E51AA"];
 
 // LINKS
 
-let links = document.querySelectorAll("a:not(nav ul li a)");
+let links = document.querySelectorAll("a:not(nav ul li a):not(.link--underline)");
+let underlines = document.querySelectorAll(".link--underline");
 let summary_links = document.querySelectorAll("summary");
 
 console.log(summary_links)
 
 links.forEach((link) => {
 
+    let random_color = palette[Math.floor(Math.random() * palette.length)]
+
     link.onmouseover = () => {
-    link.style.color = palette[Math.floor(Math.random() * palette.length)];
+    link.style.color = random_color;
+    
     }
 
     link.onmouseout = () => {
         link.style.color = "var(--black)";
+        // document.documentElement.style.setProperty("--border", `1.5px solid var(--black)`);
         }
 })
+
+underlines.forEach((underline => {
+
+    let random_color = palette[Math.floor(Math.random() * palette.length)]
+
+        underline.onmouseover = () => {
+            underline.style.color = random_color;
+            underline.style.borderBottom = `1.5px solid ${random_color}`;
+        }
+
+        underline.onmouseout = () => {
+            underline.style.color = "var(--black)";
+            underline.style.borderBottom = "1.5px solid var(--black)";
+        }
+        
+    }))
 
 
 summary_links.forEach((summary_link) => {
@@ -28,7 +49,6 @@ summary_links.forEach((summary_link) => {
         summary_link.style.color = "var(--black)";
         }
 })
-
 
 // HIGHLIGHT
 window.addEventListener("mousedown", () => {

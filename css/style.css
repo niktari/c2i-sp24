@@ -16,7 +16,7 @@
     --font-size-h4: 1rem;
 
     --font-weight-regular: 500;
-    --font-weight-bold: 800;
+    --font-weight-bold: 700;
 
     --sans-serif: "Plus Jakarta Sans", sans-serif;
     --mono: 'Space Mono', monospace;
@@ -42,6 +42,7 @@
     --light-purple: #DCE3FA;
 
     --border: 1.5px solid var(--black);
+    --border-radius: 1.25rem;
 
     --highlight-color: null;
 
@@ -59,7 +60,7 @@ body {
 
 ::selection {
     background: var(--highlight-color);
-    color: var(--white);
+    color: var(--off-white);
   }
 
 h1, .h1 {
@@ -111,6 +112,54 @@ a:not(nav a)::after {
 	margin-left: 4px;
 }
 
+/* article a {
+    display: inline-block;
+} */
+
+.link--underline {
+    border-bottom: var(--border);
+}
+
+.link--button {
+    width: 100%;
+	text-decoration: none;
+}
+
+.link--button:hover {
+	border: none;
+}
+
+.link--button:after {
+	content: none;
+}
+
+.link--button:hover .link--button:after {
+	content: none;
+}
+
+.button {
+    width: calc(100% - 3rem);
+    padding: 0.25rem 1.5rem 0.35rem 1.5rem;
+    background-color: var(--light-blue);
+    border-radius: var(--border-radius);
+    border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+    font-family: var(--sans-serif);
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: var(--black);
+	color: var(--off-white);
+    border-radius: 0;
+}
+
+.button--light-yellow {
+    background-color: var(--light-yellow);
+}
+
 section, header {
     padding: var(--section-padding) 0;
 }
@@ -140,7 +189,7 @@ nav ul {
 nav ul li {
     background-color: var(--light-beige);
     padding: 0.25rem 1.5rem 0.35rem 1.5rem;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
 }
 
 nav ul li:hover {
@@ -198,6 +247,51 @@ details article {
     margin: var(--font-size-h4) 0;
 }
 
+/* TO-DO LIST */
+ol {
+	font-size: var(--font-size-h3);
+	padding-left: 1.02em;
+}
+
+ol>li {
+	list-style-type: decimal;
+}
+
+.todolist {
+    padding: 1rem;
+    background-color: var(--off-white);
+} 
+
+.todolist ol {
+	padding-left: 0;
+}
+
+.todolist ol li {
+	display: flex;
+	gap: 0.5rem;
+	align-items: flex-start;
+	list-style: none;
+}
+
+.todolist ol li input {
+	accent-color: var(--black);
+	cursor: pointer;
+	transform: scale(1.4) translate(-0.05rem, -.05rem);
+	margin-top: 0.5rem;
+    border-radius: 0;
+}
+
+/* DEMO LIST */
+
+.demolist {
+    list-style-type: "🎥";
+    list-style-position: inside;
+    font-size: 1.4rem;
+}
+
+.demolist li a {
+    margin-left: 0.5rem;
+}
 /* HERO */
 
 /* .hero {
@@ -228,6 +322,11 @@ pre {
 	max-width: 100%;
 }
 
+code {
+    font-family: var(--mono);
+    letter-spacing: -0.03em;
+}
+
 ol {
 	padding-left: 1.5rem;
 }
@@ -255,20 +354,24 @@ footer {
 
 /* UTILITY */
 
+.space--after-half {
+	margin-bottom: calc(var(--font-size-h3) / 2);
+}
+
 .space--after-single {
-	margin-bottom: var(--font-size-h4);
+	margin-bottom: var(--font-size-h3);
 }
 
 .space--after-double {
-	margin-bottom: calc(var(--font-size-h4) * 2);
+	margin-bottom: calc(var(--font-size-h3) * 2);
 }
 
 .space--after-triple {
-	margin-bottom: calc(var(--font-size-h4) * 3);
+	margin-bottom: calc(var(--font-size-h3) * 3);
 }
 
 .space--after-quadruple {
-	margin-bottom: calc(var(--font-size-h4) * 4);
+	margin-bottom: calc(var(--font-size-h3) * 4);
 }
 
 .black-40 {
