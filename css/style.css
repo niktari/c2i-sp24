@@ -141,6 +141,7 @@ a:not(nav a)::after {
     width: calc(100% - 3rem);
     padding: 0.25rem 1.5rem 0.35rem 1.5rem;
     background-color: var(--light-blue);
+    color: var(--black);
     border-radius: var(--border-radius);
     border: none;
 	text-align: center;
@@ -276,9 +277,10 @@ ol>li {
 .todolist ol li input {
 	accent-color: var(--black);
 	cursor: pointer;
-	transform: scale(1.4) translate(-0.05rem, -.05rem);
+	transform: scale(1.4);
 	margin-top: 0.5rem;
     border-radius: 0;
+    flex: 0 0 1rem;
 }
 
 /* DEMO LIST */
