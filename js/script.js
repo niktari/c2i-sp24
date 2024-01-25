@@ -63,7 +63,7 @@ c_cells.forEach((c_cell) => {
             c_cell.innerHTML = "";
             c_cell.style.backgroundColor = "var(--black)";
             // c_cell.style.transform = `rotate(0deg)`;
-        }, 5000)
+        }, 1000)
         
     }
 
@@ -85,7 +85,7 @@ two_cells.forEach((two_cell) => {
         setTimeout(() => {
             two_cell.innerHTML = "";
             two_cell.style.backgroundColor = "var(--black)";
-        }, 5000)
+        }, 1000)
     }
     
 })
@@ -104,7 +104,7 @@ i_cells.forEach((i_cell) => {
         i_cell.style.backgroundColor = "var(--black)";
     //     i_cell.style.top = 0;
     // i_cell.style.left = 0;
-    }, 5000)
+    }, 1000)
     }
 })
 
