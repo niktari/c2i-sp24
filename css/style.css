@@ -420,6 +420,20 @@ footer {
     color: var(--light-purple);
 }
 
+/* MISC */
+.attributes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.attributes p {
+    flex: 1 1 30%;
+    /* width: calc(100%  / 3); */
+    /* border: 1px solid var(--black-40); */
+    /* padding: 0.5rem; */
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 78rem) {
@@ -465,6 +479,11 @@ footer {
 
     h1, .h1, h2, .h2, h3, .h3, p, a {
         letter-spacing: -0.01em;
+    }
+
+    .attributes {
+        flex-direction: column;
+        gap: 0;
     }
 
 
