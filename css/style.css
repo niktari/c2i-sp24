@@ -291,9 +291,16 @@ ol>li {
     font-size: 1.4rem;
 }
 
-.demolist li a {
+.studylist {
+    list-style-type: "📝";
+    list-style-position: inside;
+    font-size: 1.4rem;
+}
+
+.demolist li a, .studylist li a {
     margin-left: 0.5rem;
 }
+
 /* HERO */
 
 /* .hero {
